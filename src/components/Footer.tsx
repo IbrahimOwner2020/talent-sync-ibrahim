@@ -49,7 +49,7 @@ const Footer = () => {
 			<div>
 				<SectionWrapper>
 					<div>
-						<div className="mt-20 mb-12 flex items-start justify-between">
+						<div className="mt-28 mb-12 flex items-start justify-between">
 							<div className="max-w-[400px] mr-20">
 								<img
 									className="w-[152px] h-auto"
