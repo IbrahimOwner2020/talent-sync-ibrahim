@@ -2,6 +2,7 @@ import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import Nav from "./components/Nav";
 import Partners from "./components/Partners";
+import WhyUs from "./components/WhyUs";
 
 function App() {
 	return (
@@ -15,6 +16,7 @@ function App() {
 				<Hero />
 			</div>
 			<Partners />
+			<WhyUs />
 			<Footer />
 		</div>
 	);
