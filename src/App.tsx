@@ -1,5 +1,6 @@
 import Footer from "./components/Footer";
 import Hero from "./components/Hero";
+import Nav from "./components/Nav";
 
 function App() {
 	return (
@@ -9,6 +10,7 @@ function App() {
 					backgroundImage: "url(/images/backgrounnd.png)",
 				}}
 			>
+				<Nav />
 				<Hero />
 			</div>
 			<Footer />
