@@ -9,7 +9,7 @@ const feaures = [
 
 const Features = () => {
 	return (
-		<div className="relative pb-36 pt-8 overflow-hidden">
+		<div className="relative pb-36 pt-12 mt-28 overflow-hidden">
 			<SectionWrapper>
 				<div className="grid grid-cols-2">
 					<div className="max-w-[590px]">
@@ -53,7 +53,7 @@ const Features = () => {
 					</div>
 					<div className="">
                         <div className="absolute top-0 left-1/2">
-                            <img src="/images/mockupFeatures.png" className="aspect-[1024/760]" alt="feature" />
+                            <img src="/images/mockupFeatures.png" className="aspect-[1024/760] w-[50vw]" alt="feature" />
                         </div>
                     </div>
 				</div>
