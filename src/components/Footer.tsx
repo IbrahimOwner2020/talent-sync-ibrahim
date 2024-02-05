@@ -49,21 +49,22 @@ const Footer = () => {
 			<div>
 				<SectionWrapper>
 					<div>
-						<div className="mt-28 mb-12 flex items-start justify-between">
-							<div className="max-w-[400px] mr-20">
+						<div className="mt-28 mb-12 grid gap-12 lg:flex items-start justify-between">
+							<div className="max-w-[350px] xl:max-w-[400px] mr-8 xl:mr-20">
 								<img
 									className="w-[152px] h-auto"
 									src="/images/logo.png"
 									alt="logo"
 								/>
-								<p className="mt-6 text-lg text-[#475467]">
+								<p className="mt-6 text-base lg:text-lg text-[#475467]">
 									ClearLink is your gateway to effortless,
 									high-quality video conferencing. Join us in
-									shaping <br />
+									shaping{" "}
+									<br className="hidden xl:inline-block" />
 									the future of communication!
 								</p>
 							</div>
-							<div className="grid grid-cols-5 gap-8 flex-1">
+							<div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8 flex-1">
 								{footerLinks.map((section) => (
 									<div key={section.title}>
 										<h3 className="font-semibold text-[#667085] mb-2">
@@ -74,7 +75,7 @@ const Footer = () => {
 												<li key={link.name}>
 													<a
 														href={link.url}
-														className="text-[#475467] text-lg font-semibold block mb-2"
+														className="text-[#475467] text-base xl:text-lg font-semibold block mb-2"
 													>
 														{link.name}
 													</a>
@@ -111,17 +112,18 @@ const Footer = () => {
 			</div>
 			<div className="bg-[#F9FAFB] py-8">
 				<SectionWrapper>
-					<div className="flex items-center justify-between">
-						<p className="text-[#667085]">
+					<div className="flex flex-col-reverse sm:flex-row items-center justify-between">
+						<p className="text-[#667085] mt-4 sm:mt-0 text-sm sm:text-base">
 							© 2023 ClearLink. All rights reserved.
 						</p>
 						<div className="">
-							<ul className="flex items-center space-x-8">
+							<ul className="flex items-center space-x-2 sm:space-x-8">
 								<li>
 									<a href="#">
 										<img
 											src="/images/linkedin.png"
 											alt="social media icons"
+											className="w-4 sm:w-6 h-auto"
 										/>
 									</a>
 								</li>
@@ -130,6 +132,7 @@ const Footer = () => {
 										<img
 											src="/images/twitter.png"
 											alt="social media icons"
+											className="w-4 sm:w-6 h-auto"
 										/>
 									</a>
 								</li>
@@ -138,6 +141,7 @@ const Footer = () => {
 										<img
 											src="/images/facebook.png"
 											alt="social media icons"
+											className="w-4 sm:w-6 h-auto"
 										/>
 									</a>
 								</li>
@@ -146,6 +150,7 @@ const Footer = () => {
 										<img
 											src="/images/intergram.png"
 											alt="social media icons"
+											className="w-4 sm:w-6 h-auto"
 										/>
 									</a>
 								</li>
@@ -154,6 +159,7 @@ const Footer = () => {
 										<img
 											src="/images/github.png"
 											alt="social media icons"
+											className="w-4 sm:w-6 h-auto"
 										/>
 									</a>
 								</li>
@@ -162,6 +168,7 @@ const Footer = () => {
 										<img
 											src="/images/youtube.png"
 											alt="social media icons"
+											className="w-4 sm:w-6 h-auto"
 										/>
 									</a>
 								</li>

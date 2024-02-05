@@ -8,7 +8,7 @@ const Partners = () => {
 					Join 1,500+ companies already video conferencing the
 					ClearLink way
 				</h3>
-				<div className="flex items-center justify-between mt-16">
+				<div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-20 justify-items-center lg:gap-8 xl:flex items-center justify-between mt-16">
 					<img src="/images/shopify-svg.png" alt="partner" />
 					<img src="/images/coinbase.png" alt="partner" />
 					<img src="/images/dropbox.png" alt="partner" />

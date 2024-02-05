@@ -4,7 +4,7 @@ const Shopify = () => {
 	return (
 		<div className="bg-[#F9FAFB] py-28">
 			<SectionWrapper>
-				<div className="grid grid-cols-2 gap-8">
+				<div className="grid lg:grid-cols-2 gap-8">
 					<div>
 						<div>
 							<img
@@ -40,7 +40,7 @@ const Shopify = () => {
 								alt="Hero"
 							/>
 						</div>
-						<h1 className="text-[#101828] text-[44px] leading-[60px] max-w-[600px] font-medium my-12">
+						<h1 className="text-[#101828] text-3xl sm:text-4xl xl:text-[44px] xl:leading-[60px] max-w-[600px] font-medium my-12">
 							ClearLink has upgraded our remote meetings.
 							High-quality video, screen sharing, and top-notch
 							security make it essential for our team.
@@ -55,25 +55,25 @@ const Shopify = () => {
 									/>
 								</div>
 								<div className="flex-1">
-									<p className="text-[#101828] font-semibold text-xl">
+									<p className="text-[#101828] font-semibold text-lg sm:text-xl">
 										Sarah Thompson
 									</p>
-									<p className="text-[#475467] text-lg">
+									<p className="text-[#475467] text-base sm:text-lg">
 										Project Manager, Shopify
 									</p>
 								</div>
 								<div className="flex items-center space-x-4">
-									<button className="bg-[#FFFFFFE5] border border-[#D1E9FF] rounded-full p-6">
+									<button className="bg-[#FFFFFFE5] border border-[#D1E9FF] rounded-full p-3 sm:p-6">
 										<img
 											src="/images/left-arrow.png"
-											className="w-4 h-auto"
+											className="w-3 sm:w-4 h-auto"
 											alt="arrow left"
 										/>
 									</button>
-									<button className="bg-[#FFFFFFE5] border border-[#D1E9FF] rounded-full p-6">
+									<button className="bg-[#FFFFFFE5] border border-[#D1E9FF] rounded-full p-3 sm:p-6">
 										<img
 											src="/images/right-arrow.png"
-											className="w-4 h-auto"
+											className="w-3 sm:w-4 h-auto"
 											alt="arrow right"
 										/>
 									</button>
@@ -81,7 +81,7 @@ const Shopify = () => {
 							</div>
 						</div>
 					</div>
-					<div>
+					<div className="hidden lg:inline-block">
 						<div>
 							<img
 								src="/images/grid-images.png"

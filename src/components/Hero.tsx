@@ -3,13 +3,13 @@ import SectionWrapper from "./SectionWrapper";
 const Hero = () => {
 	return (
 		<SectionWrapper>
-			<div className="flex items-center pt-40 pb-28">
+			<div className="grid gap-y-20 lg:gap-y-0 lg:grid-cols-2 2xl:flex items-center pt-40 pb-28">
 				<div className="max-w-[780px] space-y-12">
 					<div>
-						<h1 className="font-semibold text-[64px] leading-[72px]">
+						<h1 className="font-semibold text-5xl sm:text-6xl xl:text-[64px] leading-[60px] sm:leading-[72px]">
 							Uniting the world, <br /> one video call at a time
 						</h1>
-						<p className="text-2xl text-[#667085] mt-4">
+						<p className="text-xl sm:text-2xl text-[#667085] mt-4">
 							Experience the future of communication with
 							ClearLink – where crystal-clear video conferencing
 							meets unparalleled simplicity.
@@ -18,12 +18,12 @@ const Hero = () => {
 					<div className="flex items-center">
 						<a
 							href="#"
-							className="bg-[#175CD3] px-7 py-4 rounded-full text-white text-lg font-semibold"
+							className="bg-[#175CD3] px-7 py-4 rounded-full text-white text-base sm:text-lg font-semibold"
 						>
 							Start your free trial
 						</a>
 						<a
-							className="flex items-center px-7 space-x-4 ml-4 rounded-full text-[#175CD3] text-lg font-semibold"
+							className="hidden sm:flex items-center px-7 space-x-4 ml-4 rounded-full text-[#175CD3] text-base sm:text-lg font-semibold"
 							href="#"
 						>
 							<img
@@ -38,27 +38,27 @@ const Hero = () => {
 						<div>
 							<div className="isolate flex -space-x-2 overflow-hidden">
 								<img
-									className="relative z-30 inline-block h-12 w-12 rounded-full ring-2 ring-white"
+									className="relative z-30 inline-block h-8 sm:h-12 w-8 sm:w-12 rounded-full ring-2 ring-white"
 									src="/images/avatar1.png"
 									alt=""
 								/>
 								<img
-									className="relative z-30 inline-block h-12 w-12 rounded-full ring-2 ring-white"
+									className="relative z-30 inline-block h-8 sm:h-12 w-8 sm:w-12 rounded-full ring-2 ring-white"
 									src="/images/avatar2.png"
 									alt=""
 								/>
 								<img
-									className="relative z-30 inline-block h-12 w-12 rounded-full ring-2 ring-white"
+									className="relative z-30 inline-block h-8 sm:h-12 w-8 sm:w-12 rounded-full ring-2 ring-white"
 									src="/images/avatar3.png"
 									alt=""
 								/>
 								<img
-									className="relative z-30 inline-block h-12 w-12 rounded-full ring-2 ring-white"
+									className="relative z-30 inline-block h-8 sm:h-12 w-8 sm:w-12 rounded-full ring-2 ring-white"
 									src="/images/avatar4.png"
 									alt=""
 								/>
 								<img
-									className="relative z-30 inline-block h-12 w-12 rounded-full ring-2 ring-white"
+									className="relative z-30 inline-block h-8 sm:h-12 w-8 sm:w-12 rounded-full ring-2 ring-white"
 									src="/images/avatar5.png"
 									alt=""
 								/>

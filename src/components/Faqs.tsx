@@ -35,16 +35,16 @@ const Faqs = () => {
 
 	return (
 		<SectionWrapper>
-			<div className="flex items-start justify-between py-28">
+			<div className="grid lg:grid-cols-2 gap-12 lg:flex items-start justify-between py-28">
 				<div>
 					<div className="max-w-[547px]">
-						<h3 className="text-[#175CD3] text-lg font-semibold">
+						<h3 className="text-[#175CD3] text-base sm:text-lg font-semibold">
 							Support
 						</h3>
-						<h1 className="text-[#1D2939] font-semibold text-5xl mt-3 mb-4">
+						<h1 className="text-[#1D2939] font-semibold text-4xl sm:text-5xl mt-3 mb-4">
 							FAQs
 						</h1>
-						<p className="max-w-[842px] text-[#667085] text-2xl">
+						<p className="max-w-[842px] text-[#667085] text-xl sm:text-2xl">
 							Everything you need to know about the product and
 							billing. Can’t find the answer you’re looking for?
 							Please chat to our friendly team.
@@ -65,24 +65,26 @@ const Faqs = () => {
 									setSelected(index === selected ? -1 : index)
 								}
 							>
-								<div className="flex items-center justify-between w-full mb-3">
-									<h3 className="text-[#101828] text-xl font-semibold mt-1">
+								<div className="flex items-start justify-between w-full mb-3">
+									<h3 className="text-[#101828] text-base sm:text-xl font-semibold mt-1">
 										{data.qestion}
 									</h3>
-									{selected === index ? (
-										<img
-											src="/images/minus-icon.png"
-											alt="minus icon"
-										/>
-									) : (
-										<img
-											src="/images/plus-icon.png"
-											alt="plus icon"
-										/>
-									)}
+									<div className="ml-2 mt-2 w-5 h-5">
+										{selected === index ? (
+											<img
+												src="/images/minus-icon.png"
+												alt="minus icon"
+											/>
+										) : (
+											<img
+												src="/images/plus-icon.png"
+												alt="plus icon"
+											/>
+										)}
+									</div>
 								</div>
 								{selected === index && (
-									<p className="text-[#475467] text-lg">
+									<p className="text-[#475467] text-sm sm:text-lg">
 										{data.answer}
 									</p>
 								)}
