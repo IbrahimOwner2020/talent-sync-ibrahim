@@ -9,9 +9,9 @@ const feaures = [
 
 const Features = () => {
 	return (
-		<div className="relative pb-36 pt-12 mt-28 overflow-hidden">
+		<div className="relative sm:pb-36 sm:pt-12 sm:mt-28 overflow-hidden">
 			<SectionWrapper>
-				<div className="grid grid-rows-2 lg:grid-rows-1 lg:grid-cols-2">
+				<div className="grid sm:grid-rows-2 lg:grid-rows-1 lg:grid-cols-2">
 					<div className="max-w-[590px]">
 						<h1 className="text-[#101828] font-semibold text-3xl sm:text-5xl mt-3 mb-4">
 							Ready to clear the path to perfect communication?
@@ -51,7 +51,7 @@ const Features = () => {
 							</div>
 						</div>
 					</div>
-					<div className="">
+					<div className="hidden sm:inline-block">
 						<div className="absolute top-1/2 lg:top-0 left-1/4 lg:left-1/2">
 							<img
 								src="/images/mockupFeatures.png"
